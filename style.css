@@ -11,7 +11,7 @@ body {
   margin: 0px;
 }
 
-section {
+header {
   width: 100vw;
   height: 60px;
   display: flex;
