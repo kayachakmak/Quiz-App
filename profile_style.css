@@ -1,0 +1,30 @@
+main {
+  display: block;
+  margin: 0;
+}
+
+.info {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.profile__pic__resize {
+  max-width: 25vw;
+  height: auto;
+}
+
+.profile__pic {
+  border-radius: 20px;
+  width: 20%;
+}
+
+.about-me__text {
+  width: 100vw;
+  height: 50px;
+  border: 2px solid black;
+  align-self: center;
+}
