@@ -10,7 +10,7 @@ body {
   padding: 0px;
   margin: 0px;
 }
-
+/* ---------------------TITLE------------------------------------- */
 header {
   width: 100vw;
   height: 60px;
@@ -28,4 +28,66 @@ h1 {
   padding: 10px;
   font-size: 2rem;
   margin: 0;
+}
+/* ------------------- FIRST PAGE MAIN CONTENT------------------- */
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: aqua; */
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  gap: 15px;
+}
+
+.Questions {
+  width: 100%;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 10px;
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.Questions-container {
+  width: 100%;
+}
+
+.hashtags {
+  display: flex;
+  gap: 3px;
+  margin-top: 5px;
+}
+
+a {
+  border: 1px solid black;
+  padding: 4px;
+  font-size: 0.6rem;
+}
+button {
+  margin: 5px;
+  cursor: pointer;
+  font-size: 0.6rem;
+  align-self: center;
+}
+
+.image_resized {
+  width: 100%;
+  height: 100%;
+}
+
+#button-bookmark {
+  border: none;
+  height: 20px;
+  position: absolute;
+  background-color: transparent;
+  top: -15px;
+  right: 0px;
+  z-index: 1;
 }
