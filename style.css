@@ -1,11 +1,9 @@
 @import url(./global.css);
 
-/* ------------------- FIRST PAGE MAIN CONTENT------------------- */
+/* ------------------- FIRST AND SECOND PAGE MAIN CONTENT------------------- */
 main {
   width: 100vw;
-  height: 100vh;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   padding: 15px;
@@ -14,11 +12,11 @@ main {
 }
 
 .Questions {
-  width: 100%;
+  width: 70%;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 10px;
+  font-size: 0.95 rem;
   border: 1px solid black;
   text-align: center;
   display: flex;
@@ -27,8 +25,11 @@ main {
   border-radius: 10px;
 }
 
-.Questions-container {
-  width: 100%;
+.Questions__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6vh;
+  justify-content: space-between;
 }
 
 .hashtags {
@@ -42,11 +43,12 @@ span {
   padding: 4px;
   font-size: 0.6rem;
 }
-button {
-  margin: 5px;
+.button__answer {
+  margin: 30px;
+  font-size: medium;
   cursor: pointer;
-  font-size: 0.6rem;
   align-self: center;
+  background-color: transparent;
 }
 
 .image_resized {
@@ -54,11 +56,12 @@ button {
   height: 100%;
 }
 
-#button-bookmark {
+#button__bookmark {
   border: none;
   height: 20px;
   position: absolute;
   background-color: transparent;
   top: -15px;
   right: 0px;
+  margin: 5px;
 }
