@@ -43,10 +43,12 @@ main {
   height: auto;
 }
 
-#button__settings {
-  background-color: transparent;
-  border: none;
-  font-size: 2rem;
+.button__settings {
+  color: black;
+  font-size: 1.5rem;
   font-weight: bold;
+}
+
+.info__settings {
   align-self: flex-start;
 }
