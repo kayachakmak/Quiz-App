@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 main {
   display: block;
   margin: 0;
@@ -5,9 +8,11 @@ main {
 
 .info {
   width: 100vw;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -15,16 +20,33 @@ main {
 .profile__pic__resize {
   max-width: 25vw;
   height: auto;
+  border-radius: 50%;
 }
 
 .profile__pic {
-  border-radius: 20px;
   width: 20%;
 }
 
 .about-me__text {
   width: 100vw;
-  height: 50px;
-  border: 2px solid black;
-  align-self: center;
+  border: 2px solid brown;
+}
+
+.created-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons__question,
+.icons__saved-bookmark {
+  width: 10%;
+  height: auto;
+}
+
+#button__settings {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  align-self: flex-start;
 }
