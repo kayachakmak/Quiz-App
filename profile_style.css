@@ -1,46 +1,77 @@
 * {
   box-sizing: border-box;
 }
+
 main {
-  display: block;
-  margin: 0;
+  display: flex;
+  margin: 3px;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+  /* height: 100vh; */
+  /* border-radius: 8%; */
+  /* border: 1px solid black; */
 }
 
 .info {
-  width: 100vw;
-  height: 100vh;
+  width: 90%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+  flex-direction: column;
 }
 
-.profile__pic__resize {
+.info__profile-pic__resize {
   max-width: 25vw;
-  height: auto;
   border-radius: 50%;
 }
 
-.profile__pic {
-  width: 20%;
+.info__profile-pic {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  align-items: center;
+  margin-top: 30px;
 }
 
-.about-me__text {
-  width: 100vw;
+.info__about-me {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.info__about-me__text {
   border: 2px solid brown;
 }
 
-.created-icons {
+.icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
 }
 
-.icons__question,
-.icons__saved-bookmark {
-  width: 10%;
-  height: auto;
+.icons__container {
+  width: 80px;
+  border: 1px dotted red;
+  border-radius: 10%;
+}
+
+.icons__saved-questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icons__questions__image,
+.icons__saved-bookmark__image {
+  width: 30px;
+  height: 30px;
+}
+
+.number {
+  font-weight: bolder;
 }
 
 .button__settings {
@@ -49,6 +80,68 @@ main {
   font-weight: bold;
 }
 
-.info__settings {
-  align-self: flex-start;
+.settings {
+  width: 90%;
+  padding: 10px;
+}
+
+.settings__dark-mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.switch {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 30px;
+}
+
+/* Hide the default checkbox */
+.switch input {
+  display: none;
+}
+
+/* Style the slider (the visible part of the switch) */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* Default color of the switch */
+  transition: 0.4s; /* Smooth transition when changing state */
+  border-radius: 30px;
+}
+
+.slider.round {
+  border-radius: 30px; /* Round the slider itself */
+}
+
+/* Change the background color of the slider when the checkbox is checked */
+.switch input:checked + .slider {
+  background-color: #0d1922; /* Color when the switch is on */
+}
+
+/* Style the slider's inner circle (the "thumb") */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s; /* Smooth transition when changing state */
+  border-radius: 50%; /* Round the inner circle */
+}
+
+/* Move the inner circle to the right when the checkbox is checked */
+.switch input:checked + .slider::before {
+  transform: translateX(
+    30px
+  ); /* 30px is the width of the switch - 2px (border) - 26px (circle size) */
 }

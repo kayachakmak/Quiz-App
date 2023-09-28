@@ -12,42 +12,69 @@
       <h1>QUIZ APP</h1>
     </header>
     <main>
+      <!-- red -->
       <section class="info">
-        <div class="profile__pic">
+        <!-- blue -->
+        <div class="info__profile-pic">
+          <!-- green -->
           <img
             src="./resources/DSC_7890 mail (1).jpg"
             alt="User picture"
-            class="profile__pic__resize"
+            class="info__profile-pic__resize"
           />
+          <h3 class="info__profile-name">Kaya Chakmak</h3>
         </div>
-        <h2>Kaya Chakmak</h2>
-        <div class="about-me">
+        <div class="info__about-me">
+          <!-- green -->
           <h3>About me</h3>
-          <p class="about-me__text">
+          <p class="info__about-me__text">
             👋 Hello world! I'm Kaya, a passionate web developer with a unique
-            journey. 🚀 💻 Currently honing my skills in front-end technologies
-            like HTML, CSS, and JavaScript at Spiced Academy. Always excited to
-            learn and grow in the ever-evolving tech landscape.
+            journey. 🚀 <br />
+            🧪 Former chemical engineer turned code enthusiast, I bring
+            analytical problem-solving skills from the lab to the world of web
+            development. <br />
+            💻 Currently honing my skills in front-end technologies like HTML,
+            CSS, and JavaScript at Spiced Academy. Always excited to learn and
+            grow in the ever-evolving tech landscape.
           </p>
         </div>
       </section>
-      <section class="created-icons">
-        <img
-          src="resources/question.png"
-          alt="question icon"
-          class="icons__question"
-        />
-        <img
-          src="resources/bookmark_filled.png"
-          alt="saved bookmarks icon"
-          class="icons__saved-bookmark"
-        />
+      <section class="icons">
+        <!-- orange -->
+        <div class="icons__container">
+          <!-- red -->
+          <div class="icons__saved-questions">
+            <img
+              src="resources/question.png"
+              alt=" saved questions icon"
+              class="icons__questions__image"
+            />
+            <p class="number">7</p>
+          </div>
+        </div>
+        <div class="icons__container">
+          <!-- red -->
+          <div class="icons__saved-questions">
+            <img
+              src="resources/bookmark_filled.png"
+              alt="saved bookmarks icon"
+              class="icons__saved-bookmark__image"
+            />
+            <p class="number">4</p>
+          </div>
+        </div>
       </section>
-      <section class="info__settings">
-        <a href="#" alt="Settings button" class="button__settings">Settings</a>
-        <h3>Dark Mode</h3>
-        <label for="toggle">Toggle:</label>
-        <input type="checkbox" id="toggle" />
+      <section class="settings">
+        <div><h3>Settings</h3></div>
+        <div class="settings__dark-mode">
+          <h3>Dark Mode</h3>
+          <div class="setting__dark-mode__toggle">
+            <label class="switch">
+              <input type="checkbox" id="toggleSwitch" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
