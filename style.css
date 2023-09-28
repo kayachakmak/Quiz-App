@@ -11,7 +11,7 @@ main {
   margin-bottom: 60px;
 }
 
-.Questions {
+.questions {
   width: 70%;
   padding: 10px;
   padding-left: 20px;
@@ -25,7 +25,7 @@ main {
   border-radius: 10px;
 }
 
-.Questions__container {
+.questions__container {
   display: flex;
   flex-direction: column;
   padding-top: 6vh;
@@ -55,7 +55,7 @@ span {
   width: 20px;
 }
 
-#button__bookmark {
+#questions__container__button-bookmark {
   border: none;
   height: 20px;
   position: absolute;
