@@ -17,12 +17,18 @@ main {
   padding-left: 20px;
   padding-right: 20px;
   font-size: 0.95 rem;
-  border: 1px solid black;
+  border: 1px dotted brown;
   text-align: center;
   display: flex;
   flex-direction: column;
   position: relative;
   border-radius: 10px;
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255)
+  );
 }
 
 .questions__container {
@@ -42,13 +48,22 @@ span {
   border: 1px solid black;
   padding: 4px;
   font-size: 0.6rem;
+  border-radius: 5px;
 }
+
 .button__answer {
   margin: 30px;
-  font-size: medium;
+  font-size: small;
   cursor: pointer;
   align-self: center;
-  background-color: transparent;
+  background-color: var(--fourth-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.button__answer:hover {
+  background-color: #735aa0;
 }
 
 .image_resized {

@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./profile_style.css" />
     <title>Lets have some fun</title>
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <header>
       <h1>QUIZ APP</h1>
     </header>
-    <main>
+    <main data-js="main">
       <!-- red -->
       <section class="info">
         <!-- blue -->
@@ -26,7 +27,7 @@
         </div>
         <div class="info__about-me">
           <!-- green -->
-          <h3>About me</h3>
+          <h3 class="info__about-me__header">About me</h3>
           <p class="info__about-me__text">
             👋 Hello world! I'm Kaya, a passionate web developer with a unique
             journey. 🚀 <br />
@@ -70,7 +71,7 @@
           <h3>Dark Mode</h3>
           <div class="setting__dark-mode__toggle">
             <label class="switch">
-              <input type="checkbox" id="toggleSwitch" />
+              <input type="checkbox" data-js="dark_mode" id="toggleSwitch" />
               <span class="slider round"></span>
             </label>
           </div>
