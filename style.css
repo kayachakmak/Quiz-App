@@ -46,6 +46,7 @@ main {
   display: flex;
   gap: 3px;
   margin-top: 5px;
+  align-items: flex-start;
 }
 
 span {
@@ -66,7 +67,7 @@ span {
   border-radius: 5px;
 }
 
-.button__answer:hover {
+.button__answer:active {
   background-color: #735aa0;
 }
 

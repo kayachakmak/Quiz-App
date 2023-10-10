@@ -4,32 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./form.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Lets have some fun</title>
-    <script src="./index.js" defer></script>
+    <script src="./form.js" defer></script>
   </head>
   <body>
     <header>
       <h1>QUIZ APP</h1>
     </header>
     <main>
-      <form>
+      <form data-js="form">
         <div>
           <label class="entry__label" for="questionEntry"
             >Your question:
           </label>
-          <br />
-          <textarea class="entry__text" name="questionEntry"></textarea>
+
+          <textarea
+            class="entry__text"
+            name="questionEntry"
+            maxlength="150"
+            minlength="10"
+            required
+          ></textarea>
         </div>
 
-        <div class="entry__label">
-          <label class="entry_label" for="answerEntry">Your answer: </label>
-          <br />
-          <textarea class="entry__text" name="answerEntry"></textarea>
+        <div>
+          <label class="entry__label" for="answerEntry">Your answer: </label>
+
+          <textarea
+            class="entry__text"
+            name="answerEntry"
+            maxlength="150"
+            minlength="5"
+            required
+          ></textarea>
         </div>
 
-        <div class="entry__label">
-          <label class="entry_label" for="answerEntry">Tag: </label><br />
-          <input class="entry__text" type="text" name="tag" />
+        <div>
+          <label class="entry__label" for="answerEntry">Tag: </label>
+          <input
+            class="entry__text"
+            type="text"
+            name="tag"
+            minlength="4"
+            maxlength="10"
+            required
+          />
         </div>
 
         <button class="entry__submit" type="submit">Submit</button>
