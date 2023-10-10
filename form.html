@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./form.css" />
+    <title>Lets have some fun</title>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>QUIZ APP</h1>
+    </header>
+    <main>
+      <form>
+        <div>
+          <label class="entry__label" for="questionEntry"
+            >Your question:
+          </label>
+          <br />
+          <textarea class="entry__text" name="questionEntry"></textarea>
+        </div>
+
+        <div class="entry__label">
+          <label class="entry_label" for="answerEntry">Your answer: </label>
+          <br />
+          <textarea class="entry__text" name="answerEntry"></textarea>
+        </div>
+
+        <div class="entry__label">
+          <label class="entry_label" for="answerEntry">Tag: </label><br />
+          <input class="entry__text" type="text" name="tag" />
+        </div>
+
+        <button class="entry__submit" type="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <nav class="navbar">
+        <a href="./index.html">
+          <img
+            src="./resources/home.png"
+            alt="homepage icon when current page is from"
+            class="navbar__images"
+        /></a>
+        <a href="./bookmark.html">
+          <img
+            src="./resources/bookmark_transparent.png"
+            alt="bookmark icon when current page is form"
+            class="navbar__images"
+          />
+        </a>
+        <a href="./form.html">
+          <img
+            src="./resources/add_filled.png"
+            alt="form icon when current page is form"
+            class="navbar__images"
+          />
+        </a>
+        <a href="./profile.html">
+          <img
+            src="./resources/profile.png"
+            alt="profile icon when current page is form"
+            class="navbar__images"
+          />
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>
