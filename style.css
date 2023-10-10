@@ -45,7 +45,7 @@ main {
 }
 
 span {
-  border: 1px solid black;
+  border: 1px solid gray;
   padding: 4px;
   font-size: 0.6rem;
   border-radius: 5px;
@@ -73,9 +73,15 @@ span {
 #questions__container__button-bookmark {
   border: none;
   height: 20px;
+  z-index: 1;
   position: absolute;
   background-color: transparent;
   top: -15px;
   right: 0px;
   margin: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
