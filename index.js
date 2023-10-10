@@ -13,3 +13,19 @@ toggleButton.addEventListener("click", () => {
   filled_bookmark.classList.toggle("hidden");
   empty_bookmark.classList.toggle("hidden");
 });
+
+const answerButton = document.querySelector('[data-js="button__answer"]');
+const answersText = document.querySelector(
+  '[data-js="questions__container__answers"]'
+);
+
+let isText = true;
+answerButton.addEventListener("click", () => {
+  answersText.classList.toggle("hidden");
+  if (isText) {
+    answerButton.textContent = "Hide Answer";
+  } else {
+    answerButton.textContent = "Show Answer";
+  }
+  isText = !isText;
+});

@@ -38,6 +38,10 @@ main {
   justify-content: space-between;
 }
 
+.questions__container__answers {
+  color: brown;
+}
+
 .hashtags {
   display: flex;
   gap: 3px;
@@ -72,7 +76,6 @@ span {
 
 #questions__container__button-bookmark {
   border: none;
-  height: 20px;
   z-index: 1;
   position: absolute;
   background-color: transparent;
