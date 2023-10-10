@@ -15,35 +15,46 @@
     <main>
       <form data-js="form">
         <div>
-          <label class="entry__label" for="questionEntry"
+          <label class="form__entry__label" for="questionEntry"
             >Your question:
           </label>
 
           <textarea
-            class="entry__text"
+            class="form__entry__text"
+            data-js="form__entry__text"
             name="questionEntry"
             maxlength="150"
             minlength="10"
             required
           ></textarea>
+
+          <p class="form__character-count">
+            <span data-js="amountLeft">150</span> characters left
+          </p>
         </div>
 
         <div>
-          <label class="entry__label" for="answerEntry">Your answer: </label>
+          <label class="form__entry__label" for="answerEntry"
+            >Your answer:
+          </label>
 
           <textarea
-            class="entry__text"
+            class="form__entry__text"
+            data-js="form__answer__text"
             name="answerEntry"
             maxlength="150"
             minlength="5"
             required
           ></textarea>
+          <p class="form__character-count">
+            <span data-js="amountLeft">150</span> characters left
+          </p>
         </div>
 
         <div>
-          <label class="entry__label" for="answerEntry">Tag: </label>
+          <label class="form__entry__label" for="answerEntry">Tag: </label>
           <input
-            class="entry__text"
+            class="form__entry__text"
             type="text"
             name="tag"
             minlength="4"
@@ -52,7 +63,7 @@
           />
         </div>
 
-        <button class="entry__submit" type="submit">Submit</button>
+        <button class="form__entry__submit" type="submit">Submit</button>
       </form>
     </main>
     <footer>

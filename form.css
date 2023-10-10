@@ -15,11 +15,11 @@ div {
   flex-direction: column;
   align-items: center;
 }
-.entry__label {
+.form__entry__label {
   font-size: 0.85rem;
 }
 
-.entry__text {
+.form__entry__text {
   border: 1px dotted brown;
   border-radius: 10px;
   background-image: linear-gradient(
@@ -35,7 +35,7 @@ textarea {
   height: 20vh;
 }
 
-.entry__submit {
+.form__entry__submit {
   cursor: pointer;
   background-color: var(--fourth-color);
   color: #fff;
@@ -44,6 +44,9 @@ textarea {
   padding: 8px;
 }
 
-.entry__submit:active {
+.form__entry__submit:active {
   background-color: #735aa0;
+}
+
+.form__character-count {
 }

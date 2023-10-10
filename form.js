@@ -48,3 +48,11 @@ form.addEventListener("submit", (event) => {
   <span>#${tag}</span> </div>`;
   form.reset();
 });
+
+const questionEntry = document.querySelector('[data-js="form__entry__text"]');
+const amountLeft = document.querySelector('[data-js="amountLeft"]');
+const answerEntry = document.querySelector('[data-js="form__answer__text"]');
+
+questionEntry.addEventListener("input", (event) => {
+  amountLeft.textContent = 150 - event.target.value.length;
+});

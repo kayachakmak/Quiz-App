@@ -34,13 +34,3 @@ answerButton.addEventListener("click", () => {
   }
   isText = !isText;
 });
-
-//---------------------Form Entries---------------------
-const form = document.querySelector('[data-js="form"]');
-
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const dataForm = new FormData(event.target);
-  const data = Object.fromEntries(dataForm);
-  console.log(data);
-});
