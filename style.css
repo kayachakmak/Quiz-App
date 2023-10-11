@@ -79,7 +79,7 @@ span {
   width: 20px;
 }
 
-#questions__container__button-bookmark {
+.questions__container__button-bookmark {
   border: none;
   z-index: 1;
   position: absolute;

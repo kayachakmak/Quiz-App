@@ -9,15 +9,17 @@ darkMode?.addEventListener("click", () => {
 });
 
 //---------------------Active Bookmark Button---------------------
-const filledBookmark = document.querySelector('[data-js="image_filled"]');
-const emptyBookmark = document.querySelector('[data-js="image_empty"]');
-const toggleButton = document.querySelector(
-  '[data-js="questions__container__button-bookmark"]'
+const filledBookmarks = document.querySelectorAll('[data-js="image_filled"]');
+const emptyBookmarks = document.querySelectorAll('[data-js="image_empty"]');
+const toggleButtons = document.querySelectorAll(
+  ".questions__container__button-bookmark"
 );
 
-toggleButton?.addEventListener("click", () => {
-  filledBookmark.classList.toggle("hidden");
-  emptyBookmark.classList.toggle("hidden");
+toggleButtons?.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    filledBookmarks[index].classList.toggle("hidden");
+    emptyBookmarks[index].classList.toggle("hidden");
+  });
 });
 
 //---------------------Active Show Answer Buttons---------------------
