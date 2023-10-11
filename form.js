@@ -46,6 +46,8 @@ form.addEventListener("submit", (event) => {
  </p>
  <div class="hashtags">
   <span>#${tag}</span> </div>`;
+  amountLeft.textContent = maxLenght;
+  amountLeftAnswer.textContent = maxLenght;
   form.reset();
 });
 
