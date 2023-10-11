@@ -1,9 +1,11 @@
 //---------------------Dark Mode---------------------
 const darkMode = document.querySelector('[data-js="dark_mode"]');
 const main = document.querySelector('[data-js="main"]');
+const navbar = document.querySelector('[data-js="navbar"]');
 
 darkMode?.addEventListener("click", () => {
   main.classList.toggle("dark");
+  navbar.classList.toggle("navbarDark");
 });
 
 //---------------------Active Bookmark Button---------------------

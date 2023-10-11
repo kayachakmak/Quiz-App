@@ -52,7 +52,13 @@ form.addEventListener("submit", (event) => {
 const questionEntry = document.querySelector('[data-js="form__entry__text"]');
 const amountLeft = document.querySelector('[data-js="amountLeft"]');
 const answerEntry = document.querySelector('[data-js="form__answer__text"]');
+const amountLeftAnswer = document.querySelector('[data-js="amountLeftAnswer"]');
+const maxLenght = questionEntry.getAttribute("maxlength");
 
 questionEntry.addEventListener("input", (event) => {
-  amountLeft.textContent = 150 - event.target.value.length;
+  amountLeft.textContent = maxLenght - event.target.value.length;
+});
+
+answerEntry.addEventListener("input", (event) => {
+  amountLeftAnswer.textContent = maxLenght - event.target.value.length;
 });

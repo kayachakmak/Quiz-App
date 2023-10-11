@@ -72,3 +72,7 @@ a {
 main.dark {
   background-color: rgb(77, 76, 76);
 }
+
+.navbarDark {
+  background-color: rgb(110, 107, 107);
+}

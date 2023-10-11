@@ -14,11 +14,10 @@
     </header>
     <main>
       <form data-js="form">
-        <div>
+        <legend>
           <label class="form__entry__label" for="questionEntry"
             >Your question:
           </label>
-
           <textarea
             class="form__entry__text"
             data-js="form__entry__text"
@@ -27,17 +26,15 @@
             minlength="10"
             required
           ></textarea>
-
           <p class="form__character-count">
             <span data-js="amountLeft">150</span> characters left
           </p>
-        </div>
+        </legend>
 
-        <div>
+        <legend>
           <label class="form__entry__label" for="answerEntry"
             >Your answer:
           </label>
-
           <textarea
             class="form__entry__text"
             data-js="form__answer__text"
@@ -47,23 +44,23 @@
             required
           ></textarea>
           <p class="form__character-count">
-            <span data-js="amountLeft">150</span> characters left
+            <span data-js="amountLeftAnswer">150</span> characters left
           </p>
-        </div>
-
-        <div>
+        </legend>
+        <legend>
           <label class="form__entry__label" for="answerEntry">Tag: </label>
           <input
-            class="form__entry__text"
+            class="form__entry__tag"
             type="text"
             name="tag"
             minlength="4"
             maxlength="10"
             required
           />
-        </div>
-
-        <button class="form__entry__submit" type="submit">Submit</button>
+        </legend>
+        <legend>
+          <button class="form__entry__submit" type="submit">Submit</button>
+        </legend>
       </form>
     </main>
     <footer>

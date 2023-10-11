@@ -8,8 +8,7 @@ form {
   margin-top: 35px;
   width: 100vw;
 }
-
-div {
+legend {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -29,8 +28,23 @@ div {
     rgb(255, 255, 255)
   );
   width: 70%;
+  text-align: center;
+  padding: 40px;
 }
 
+.form__entry__tag {
+  border: 1px dotted brown;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255)
+  );
+  width: 70%;
+  text-align: center;
+  padding: 5px;
+}
 textarea {
   height: 20vh;
 }
@@ -46,7 +60,4 @@ textarea {
 
 .form__entry__submit:active {
   background-color: #735aa0;
-}
-
-.form__character-count {
 }

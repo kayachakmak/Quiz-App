@@ -4,8 +4,6 @@
 
 main {
   display: flex;
-  margin: 3px;
-  width: 100vw;
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
