@@ -15,24 +15,25 @@ const toggleButton = document.querySelector(
   '[data-js="questions__container__button-bookmark"]'
 );
 
-toggleButton.addEventListener("click", () => {
+toggleButton?.addEventListener("click", () => {
   filledBookmark.classList.toggle("hidden");
   emptyBookmark.classList.toggle("hidden");
 });
 
-//---------------------Active Show Anser Button---------------------
-const answerButton = document.querySelector('[data-js="button__answer"]');
-const answersText = document.querySelector(
-  '[data-js="questions__container__answers"]'
-);
+//---------------------Active Show Answer Buttons---------------------
+const answerButtons = document.querySelectorAll(".button__answer");
+const answersText = document.querySelectorAll(".questions__container__answers");
 
-let isText = true;
-answerButton.addEventListener("click", () => {
-  answersText.classList.toggle("hidden");
-  if (isText) {
-    answerButton.textContent = "Hide Answer";
-  } else {
-    answerButton.textContent = "Show Answer";
-  }
-  isText = !isText;
+answerButtons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    // Toggle the 'hidden' class on the next <p> element
+    answersText[index].classList.toggle("hidden");
+
+    // Change the button text based on its current state
+    if (answersText[index].classList.contains("hidden")) {
+      button.textContent = "Show Answer";
+    } else {
+      button.textContent = "Hide Answer";
+    }
+  });
 });
