@@ -65,10 +65,14 @@ span {
   color: #fff;
   border: none;
   border-radius: 5px;
+  padding: 10px;
+  transition: box-shadow 300ms;
 }
 
-.button__answer:active {
-  background-color: #735aa0;
+.button__answer:hover {
+  background-color: #6bc47a;
+  box-shadow: 6px 10px 8px 0 var(--third-color);
+  font-weight: bolder;
 }
 
 .image_resized {

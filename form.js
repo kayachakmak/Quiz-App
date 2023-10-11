@@ -11,7 +11,7 @@ form.addEventListener("submit", (event) => {
   const tag = data.tag;
 
   const newCard = document.createElement("div");
-  newCard.className = "questions";
+  newCard.className = "questions animated";
   console.log(newCard);
   const main = document.querySelector("main");
   main.append(newCard);
